@@ -2,82 +2,228 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Saumya Mathkar | Edge Computing Researcher</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saumya Mathkar | PhD Researcher in Edge Computing | BITS Pilani Goa</title>
+    <meta name="description" content="Saumya Mathkar is a PhD researcher at BITS Pilani Goa and Project Associate at NIT Karnataka, Surathkal, working on edge computing, GPU-aware scheduling, distributed machine learning, and intelligent resource allocation.">
+    <link rel="canonical" href="https://mathkarsaumya.info/">
+    <meta name="robots" content="index, follow">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Saumya Mathkar",
+      "url": "https://mathkarsaumya.info/",
+      "jobTitle": "PhD Researcher in Edge Computing",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "BITS Pilani, K K Birla Goa Campus"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Goa",
+        "addressCountry": "India"
+      }
+    }
+    </script>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f6f8;
-            color: #333;
-            line-height: 1.6;
+        :root {
+            --navy: #0f172a;
+            --navy-soft: #1e293b;
+            --accent: #2563eb;
+            --accent-soft: #dbeafe;
+            --text: #1e293b;
+            --muted: #64748b;
+            --line: #e2e8f0;
+            --bg: #f8fafc;
+            --card: #ffffff;
         }
 
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+        }
+
+        /* Header */
         header {
-            background: #0f172a;
-            color: white;
-            padding: 40px 20px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: #fff;
+            padding: 56px 20px 48px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 32px;
+            font-size: 40px;
+            letter-spacing: 0.5px;
         }
 
-        header p {
-            margin-top: 10px;
-            font-size: 16px;
+        header .role {
+            margin: 14px auto 0;
+            max-width: 760px;
+            font-size: 17px;
             color: #cbd5e1;
         }
 
+        header .role span { display: block; }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: var(--navy);
+            border-bottom: 1px solid var(--navy-soft);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 4px 22px;
+            padding: 12px 16px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 2px 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: #fff;
+            border-bottom-color: #60a5fa;
+            text-decoration: none;
+        }
+
+        /* Sections */
         section {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 44px auto;
             padding: 0 20px;
         }
 
         h2 {
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 8px;
-            color: #0f172a;
+            margin: 0 0 20px;
+            padding-bottom: 10px;
+            font-size: 24px;
+            color: var(--navy);
+            border-bottom: 2px solid var(--line);
+            position: relative;
         }
 
-        ul {
-            padding-left: 20px;
+        h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 56px;
+            height: 2px;
+            background: var(--accent);
         }
 
-        .highlight {
-            font-weight: bold;
+        h3 { margin: 0; font-size: 17px; color: var(--navy); }
+
+        ul { padding-left: 20px; margin: 10px 0 0; }
+        li { margin-bottom: 6px; }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .highlight { font-weight: 600; }
+
+        /* About */
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
         }
 
-        .contact {
-            text-align: center;
-            margin: 60px 0;
+        .about img {
+            width: 130px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.18);
         }
+
+        .about p { flex: 1; min-width: 240px; margin: 0; }
+
+        /* Cards */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+        }
+
+        .card p { margin: 0; }
+        .card .links { margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; }
+
+        .btn {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 3px 12px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: #1d4ed8;
+        }
+
+        .btn:hover { background: #bfdbfe; text-decoration: none; }
+
+        .meta { color: var(--muted); font-size: 14px; margin: 2px 0 0; }
+
+        /* Research focus */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .tags li {
+            margin: 0;
+            padding: 8px 16px;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            font-size: 15px;
+        }
+
+        /* Contact */
+        .contact { text-align: center; margin: 60px auto; }
+        .contact .links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
 
         footer {
-            background: #0f172a;
-            color: #cbd5e1;
+            background: var(--navy);
+            color: #94a3b8;
             text-align: center;
-            padding: 20px;
+            padding: 22px 20px;
             font-size: 14px;
         }
 
-        a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
         @media (max-width: 600px) {
-            header h1 {
-                font-size: 24px;
-            }
+            header { padding: 40px 16px 34px; }
+            header h1 { font-size: 28px; }
+            header .role { font-size: 15px; }
+            .about { justify-content: center; text-align: left; }
+            h2 { font-size: 21px; }
+            .card { padding: 14px 16px; }
+            nav { gap: 4px 16px; }
         }
     </style>
 </head>
@@ -85,65 +231,56 @@
 <body>
 <header>
     <h1>Saumya Mathkar</h1>
-    <p>PhD Researcher in Edge Computing, BITS Pilani Goa | Project Associate, NIT Karnataka, Surathkal</p>
+    <p class="role">
+        <span>PhD Researcher in Edge Computing, BITS Pilani Goa</span>
+        <span>Project Associate, NIT Karnataka, Surathkal</span>
+    </p>
 </header>
-<title>Saumya Mathkar | PhD Researcher in Edge Computing | BITS Pilani Goa</title>
 
-<meta name="description" content="Saumya Mathkar is a PhD Researcher at BITS Pilani Goa working on Edge Computing, GPU-aware scheduling, distributed machine learning, and intelligent resource allocation.">
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#publications">Publications</a>
+    <a href="#patents">Patents</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<link rel="canonical" href="https://mathkarsaumya.info/">
-
-<meta name="robots" content="index, follow">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Saumya Mathkar",
-  "url": "https://mathkarsaumya.info/",
-  "jobTitle": "PhD Researcher in Edge Computing",
-  "affiliation": {
-    "@type": "Organization",
-    "name": "BITS Pilani, K K Birla Goa Campus"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Goa",
-    "addressCountry": "India"
-  }
-}
-</script>
-
-<section>
+<section id="about">
     <h2>About</h2>
-
-    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-
-        <img src="Saumya.jpg" alt="Saumya Mathkar"
-             style="width: 130px; height: auto; border-radius: 10px;">
-
-        <p style="flex: 1;">
-            Saumya Mathkar is a PhD researcher at <span class="highlight">BITS Pilani, K K Birla Goa Campus</span>, 
+    <div class="about">
+        <img src="Saumya.jpg" alt="Saumya Mathkar">
+        <p>
+            Saumya Mathkar is a PhD researcher at <span class="highlight">BITS Pilani, K K Birla Goa Campus</span>,
             working in the area of Edge Computing and Optimizations.
-            Her research focuses on intelligent task scheduling, GPU-aware resource allocation, 
+            Her research focuses on intelligent task scheduling, GPU-aware resource allocation,
             and distributed machine learning tasks in heterogeneous edge environments.
         </p>
-
     </div>
 </section>
 
-<section>
+<section id="education">
     <h2>Education</h2>
-    <ul>
-        <li><strong>PhD – Edge Computing </strong>, BITS Pilani Goa (2021 – Present)</li>
-        <li><strong>M.E. – Computer Science & Engineering</strong>, Goa College of Engineering (2018 – 2020)</li>
-        <li><strong>B.E. – Computer Science & Engineering</strong>, Visvesvaraya Technological University (2014 – 2018)</li>
-    </ul>
+    <div class="card">
+        <h3>PhD – Edge Computing</h3>
+        <p class="meta">BITS Pilani Goa · 2021 – Present</p>
+        <p class="meta">Under the supervision of <a href="http://www.vinayaknaik.info/" target="_blank" rel="noopener">Prof. Vinayak Naik</a></p>
+    </div>
+    <div class="card">
+        <h3>M.E. – Computer Science &amp; Engineering</h3>
+        <p class="meta">Goa College of Engineering · 2018 – 2020</p>
+    </div>
+    <div class="card">
+        <h3>B.E. – Computer Science &amp; Engineering</h3>
+        <p class="meta">Visvesvaraya Technological University · 2014 – 2018</p>
+    </div>
 </section>
 
-<section>
+<section id="research">
     <h2>Research Focus</h2>
-    <ul>
+    <ul class="tags">
         <li>Intelligent scheduling for heterogeneous edge clusters</li>
         <li>GPU-aware resource allocation</li>
         <li>Distributed machine learning systems</li>
@@ -151,75 +288,99 @@
     </ul>
 </section>
 
-<section>
+<section id="expertise">
     <h2>Technical Expertise</h2>
-    <ul>
+    <ul class="tags">
         <li>AWS (IoT Core, SageMaker, EC2, Lambda, DynamoDB, S3, Greengrass)</li>
-        <li>Edge AI & NVIDIA Jetson Platforms</li>
+        <li>Edge AI &amp; NVIDIA Jetson Platforms</li>
         <li>Ray Distributed Framework</li>
         <li>Python, NodeJS, Embedded C</li>
         <li>MySQL, SQLite</li>
     </ul>
 </section>
 
-<section>
+<section id="publications">
     <h2>Selected Publications</h2>
-    <ul>
-        <li>
-            <strong>Saumya Mathkar</strong>, Pinki Pinki, and Vinayak Naik, “<strong>RL-SelfMap: A Reinforcement Learning Scheduler for Machine Learning Tasks on a Cluster of Heterogeneous Edge Devices</strong>,” in <em>23rd EAI International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services (MobiQuitous)</em>, Beppu, Japan, EAI, 2026.<br>
-            <a href="papers/367483_rl-selfmapareinforcementle.pdf" target="_blank">Preprint</a> | <a href="https://drive.google.com/file/d/1SSbvb4nCbrt5MPvWD3yL7SCui4ix6lhU/view?usp=sharing" target="_blank">Presentation</a>
-        </li>
 
-        <li>
-            <strong>Saumya Mathkar</strong>, Pinki Pinki, and Vinayak Naik, “<strong>Memory-aware Hierarchical Scheduling of ML Tasks in Heterogeneous Clusters of Edge Computing Devices with GPUs</strong>,” in <em>2026 18th International Conference on Communication Systems and Networks (COMSNETS)</em>, Bengaluru, India, pp. 51–59, IEEE, 2026.<br>
-            <a href="https://ieeexplore.ieee.org/document/11418252" target="_blank">IEEE Xplore</a>
-        </li>
+    <div class="card">
+        <p>
+            <strong>Saumya Mathkar</strong>, Pinki Pinki, and Vinayak Naik, “<strong>RL-SelfMap: A Reinforcement Learning Scheduler for Machine Learning Tasks on a Cluster of Heterogeneous Edge Devices</strong>,” in <em>23rd EAI International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services (MobiQuitous)</em>, Beppu, Japan, EAI, 2026.
+        </p>
+        <div class="links">
+            <a class="btn" href="papers/367483_rl-selfmapareinforcementle.pdf" target="_blank" rel="noopener">Preprint</a>
+            <a class="btn" href="https://drive.google.com/file/d/1SSbvb4nCbrt5MPvWD3yL7SCui4ix6lhU/view?usp=sharing" target="_blank" rel="noopener">Presentation</a>
+        </div>
+    </div>
 
-        <li>
-            <strong>Saumya Mathkar</strong>, Shreya Aiyer, Yashovardhan Bapat, Pinki Pinki, Arnab K. Paul, and Vinayak Naik, “<strong>Scheduling Big Machine Learning Tasks on Clusters of Heterogeneous Edge Devices</strong>,” in <em>2025 17th International Conference on Communication Systems and Networks (COMSNETS)</em>, Bengaluru, India, pp. 439–447, IEEE, 2025.<br>
-            <a href="https://ieeexplore.ieee.org/document/10885761" target="_blank">IEEE Xplore</a>
-        </li>
+    <div class="card">
+        <p>
+            <strong>Saumya Mathkar</strong>, Pinki Pinki, and Vinayak Naik, “<strong>Memory-aware Hierarchical Scheduling of ML Tasks in Heterogeneous Clusters of Edge Computing Devices with GPUs</strong>,” in <em>2026 18th International Conference on Communication Systems and Networks (COMSNETS)</em>, Bengaluru, India, pp. 51–59, IEEE, 2026.
+        </p>
+        <div class="links">
+            <a class="btn" href="https://ieeexplore.ieee.org/document/11418252" target="_blank" rel="noopener">IEEE Xplore</a>
+        </div>
+    </div>
 
-        <li>
-            <strong>Saumya Mathkar</strong>, Prakhar Karsh, Udit Baluja, Surjya Ghosh, Sougata Sen, and Vinayak Naik, “<strong>A smartphone-based application to detect Parkinson’s disease using audio</strong>,” in <em>2023 15th International Conference on Communication Systems and Networks (COMSNETS)</em>, Bengaluru, India, pp. 177–179, IEEE, 2023.<br>
-            <a href="https://ieeexplore.ieee.org/document/10041413" target="_blank">IEEE Xplore</a>
-        </li>
-    </ul>
+    <div class="card">
+        <p>
+            <strong>Saumya Mathkar</strong>, Shreya Aiyer, Yashovardhan Bapat, Pinki Pinki, Arnab K. Paul, and Vinayak Naik, “<strong>Scheduling Big Machine Learning Tasks on Clusters of Heterogeneous Edge Devices</strong>,” in <em>2025 17th International Conference on Communication Systems and Networks (COMSNETS)</em>, Bengaluru, India, pp. 439–447, IEEE, 2025.
+        </p>
+        <div class="links">
+            <a class="btn" href="https://ieeexplore.ieee.org/document/10885761" target="_blank" rel="noopener">IEEE Xplore</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <p>
+            <strong>Saumya Mathkar</strong>, Prakhar Karsh, Udit Baluja, Surjya Ghosh, Sougata Sen, and Vinayak Naik, “<strong>A smartphone-based application to detect Parkinson’s disease using audio</strong>,” in <em>2023 15th International Conference on Communication Systems and Networks (COMSNETS)</em>, Bengaluru, India, pp. 177–179, IEEE, 2023.
+        </p>
+        <div class="links">
+            <a class="btn" href="https://ieeexplore.ieee.org/document/10041413" target="_blank" rel="noopener">IEEE Xplore</a>
+        </div>
+    </div>
 </section>
-<section>
+
+<section id="patents">
     <h2>Patents</h2>
-    <ul>
-        <li>
+    <div class="card">
+        <p>
             <strong>Saumya Mathkar</strong>, Shreya Aiyer, Yashovardhan Bapat, Pinki Pinki, Arnab K. Paul, and Vinayak Naik, “<strong>Adaptive Task Allocation System for Heterogeneous Edge Devices</strong>,” Provisional Patent Application No. 202411042163, Controller General of Patents, Designs &amp; Trade Marks, India, filed May 30, 2024.
-        </li>
-    </ul>
+        </p>
+    </div>
 </section>
 
-<section>
+<section id="experience">
     <h2>Experience</h2>
 
-    <h3>Project Associate – NIT Karnataka, Surathkal</h3>
-    <p><em>Currently working</em></p>
+    <div class="card">
+        <h3>Project Associate – NIT Karnataka, Surathkal</h3>
+        <p class="meta">Currently working</p>
+    </div>
 
-    <h3>Intern &amp; Apprentice – Research &amp; Development Department, Siemens, Goa</h3>
-    <p><em>Aug 2019 – Sept 2021 | Verna, Goa</em></p>
-
+    <div class="card">
+        <h3>Intern &amp; Apprentice – Research &amp; Development Department, Siemens, Goa</h3>
+        <p class="meta">Aug 2019 – Sept 2021 · Verna, Goa</p>
         <ul>
-        <li>Administered DevOps workflows on Azure DevOps: migrated repositories, configured build agents, and built CI/CD pipelines with YAML-based automation scripts.</li>
-        <li>Designed and deployed IoT systems on AWS (IoT Core, EC2) that transmit and monitor device data in real time.</li>
-        <li>Converted legacy Visual Basic tools to Python and integrated them with Azure DevOps to automate existing workflows.</li>
-        <li>Developed IoT-enabled microcontroller systems on the PIC18 platform and implemented MODBUS gateways that send device data to the cloud over GSM/GPRS.</li>
-        <li>Integrated GSM/GPRS modules (SIM800, SIM900, Telit GE910) and applied IoT protocols, including MQTT, CoAP, AMQP, HTTP, and HTTPS.</li>
-    </ul>
+            <li>Administered DevOps workflows on Azure DevOps: migrated repositories, configured build agents, and built CI/CD pipelines with YAML-based automation scripts.</li>
+            <li>Designed and deployed IoT systems on AWS (IoT Core, EC2) that transmit and monitor device data in real time.</li>
+            <li>Converted legacy Visual Basic tools to Python and integrated them with Azure DevOps to automate existing workflows.</li>
+            <li>Developed IoT-enabled microcontroller systems on the PIC18 platform and implemented MODBUS gateways that send device data to the cloud over GSM/GPRS.</li>
+            <li>Integrated GSM/GPRS modules (SIM800, SIM900, Telit GE910) and applied IoT protocols, including MQTT, CoAP, AMQP, HTTP, and HTTPS.</li>
+        </ul>
+    </div>
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:mathkarsaumya@gmail.com">mathkarsaumya@gmail.com</a></p>
+    <p>Feel free to reach out about research collaborations.</p>
+    <div class="links">
+        <a class="btn" href="mailto:mathkarsaumya@gmail.com">mathkarsaumya@gmail.com</a>
+        <a class="btn" href="https://github.com/Saumyamathkar" target="_blank" rel="noopener">GitHub</a>
+    </div>
 </section>
 
 <footer>
-    © 2026 Saumya Mathkar | Academic Researcher Website
+    © 2026 Saumya Mathkar
 </footer>
 
 </body>
